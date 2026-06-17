@@ -37,10 +37,18 @@ During initial setup, access to the Windows Server 2022 template was blocked due
 
 #### Execution Methodology
 
-1. **Boot Order Modification:** I modified the VirtualBox VM storage system to place the Windows Server installation ISO at position 1  by shifting the Optical drive to the top.
-2. **Recovery Shell Spawning:** I then interrupted the standard installer setup wizard sequence using the native shortcut `Shift + F10` to drop into a system-level command shell (`X:\\Sources>`).
-3.  **Volume Discovery:** Mapped the local volumes to identify the primary operating system footprint on the storage layout:
+1. **Boot Order Modification:** I modified the VirtualBox VM storage system to place the Windows Server installation ISO at position 1 by shifting the Optical drive to the top.&#x20;
+
+<figure><img src=".gitbook/assets/redline1.png" alt=""><figcaption></figcaption></figure>
+
+2. **Recovery Shell Spawning:** I then interrupted the standard installer setup wizard sequence using the native shortcut `Shift + F10` to drop into a system-level command shell (`X:\\Sources>`).&#x20;
+
+<figure><img src=".gitbook/assets/redline2.png" alt=""><figcaption></figcaption></figure>
+
+2.  **Volume Discovery:** Mapped the local volumes to identify the primary operating system footprint on the storage layout:
 
     ```cmd
     dir d:\\windows\\system32\\utilman.exe
     ```
+
+After confirming the active system volume, I backed up `utilman.exe` and replaced it with `cmd.exe`. This exposed a privileged shell from the Windows logon screen.
