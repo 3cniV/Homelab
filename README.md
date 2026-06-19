@@ -1,11 +1,10 @@
 ---
 description: >-
-  This project focuses on attacking hardened environments, automating advanced
-  adversarial methodologies, discovering modern web/API vulnerabilities, and
-  analyzing defensive strategies.
+  This project focuses on designing hardened network boundaries, validating
+  zero-trust firewall policy, and troubleshooting real infrastructure failures.
 ---
 
-# Project RedLine: An Aggressive Pentesting & Evasion Homelab
+# Project RedLine: A Segmented Three-Tier Zero-Trust Homelab
 
 ### Executive Summary
 

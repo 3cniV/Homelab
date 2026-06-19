@@ -1,3 +1,3 @@
 # Table of contents
 
-* [Project RedLine: An Aggressive Pentesting & Evasion Homelab](README.md)
+* [Project RedLine: A Segmented Three-Tier Zero-Trust Homelab](README.md)
