@@ -303,3 +303,12 @@ The work also moved beyond basic deployment. It required account recovery, opera
 The final validation confirmed two critical outcomes. Public-facing systems in the DMZ retained outbound internet access through NAT, and lateral movement into CorpLAN was fully blocked by explicit firewall policy. The result is a lab that is not only functional, but defensible.
 
 This environment now serves as a stable foundation for advanced offensive testing, firewall evasion research, and future adversary simulation workflows.
+
+### Validation & Testing
+
+To verify the integrity of the perimeter guard:
+
+* Conducted aggressive reconnaissance scans using Nmap from external/DMZ viewpoints.
+* Validated that unauthorized traffic drops silently and lateral movement vectors are entirely mitigated.
+
+<figure><img src=".gitbook/assets/ubu2.png" alt=""><figcaption></figcaption></figure>
